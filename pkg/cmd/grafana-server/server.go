@@ -11,19 +11,19 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/grafana/grafana/pkg/api"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/login"
-	"github.com/grafana/grafana/pkg/metrics"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/services/alerting"
-	"github.com/grafana/grafana/pkg/services/cleanup"
-	"github.com/grafana/grafana/pkg/services/notifications"
-	"github.com/grafana/grafana/pkg/services/search"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/social"
-	"github.com/grafana/grafana/pkg/tracing"
+	"pkg/api"
+	"pkg/log"
+	"pkg/login"
+	"pkg/metrics"
+	"pkg/models"
+	"pkg/plugins"
+	"pkg/services/alerting"
+	"pkg/services/cleanup"
+	"pkg/services/notifications"
+	"pkg/services/search"
+	"pkg/setting"
+	"pkg/social"
+	"pkg/tracing"
 )
 
 func NewGrafanaServer() models.GrafanaServer {
