@@ -528,6 +528,17 @@ addFuncDef({
   defaultParams: ['5'],
 });
 
+
+addFuncDef({
+  name: 'movingSum',
+  category: categories.Filter,
+  params: [
+    { name: 'windowSize', type: 'int_or_interval', options: ['5', '7', '10', '5min', '10min', '30min', '1hour'] },
+  ],
+  defaultParams: ['5'],
+});
+
+
 addFuncDef({
   name: 'stdev',
   category: categories.Filter,
